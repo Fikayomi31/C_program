@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct User - Structure name User
+ * @name: name of the User
+ * @email: email of the User
+ * @age: age of the User
+ * 
+*/
 struct User
 {
     char *name;
@@ -8,6 +15,12 @@ struct User
     int age;
 };
 
+/**
+ * new_user - function of the struct
+ * @name: nameof the function
+ * @email: email of the function
+ * @age: age of the function
+*/
 struct User *new_user(char *name, char *email, int age)
 {
     struct User *user;
@@ -19,6 +32,12 @@ struct User *new_user(char *name, char *email, int age)
     user->age = age;
     return (user);
 }
+
+/**
+ * main - check the code
+ * 
+ * Return: Always 0
+*/
 int main(void)
 {
     struct User *user;
